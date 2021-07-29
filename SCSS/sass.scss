@@ -278,6 +278,7 @@
                           "hora link";
     justify-items: center;
     padding-top: 25px;
+    align-items: center;
 
     .horarios__horaimg{
         width: 100px;
@@ -289,6 +290,7 @@
         grid-area: hora;
         font-size: x-large;
         text-align: center;
+        width: 80%;
     }
 
     .horarios__turnoimg{
@@ -300,7 +302,10 @@
     .horarios__link{
         grid-area: link;
         font-size: x-large;
-        text-decoration: none
+        text-decoration: none;
+        color: black;
+        text-shadow: 1px 1px whitesmoke;
+        width: 80%;
     }
 }
 

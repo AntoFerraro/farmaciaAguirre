@@ -245,7 +245,8 @@
   grid-template-rows: 100px 100px;
   grid-template-areas: "reloj enfermera" "hora link";
   justify-items: center;
-  padding-top: 25px; }
+  padding-top: 25px;
+  align-items: center; }
   .horarios__principal .horarios__horaimg {
     width: 100px;
     height: 100px;
@@ -253,7 +254,8 @@
   .horarios__principal .horarios__parrafo {
     grid-area: hora;
     font-size: x-large;
-    text-align: center; }
+    text-align: center;
+    width: 80%; }
   .horarios__principal .horarios__turnoimg {
     grid-area: enfermera;
     width: 100px;
@@ -261,7 +263,10 @@
   .horarios__principal .horarios__link {
     grid-area: link;
     font-size: x-large;
-    text-decoration: none; }
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px whitesmoke;
+    width: 80%; }
 
 .servicios__titulos .servicios__atencion {
   text-align: left;

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Comienza Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> <!--Termina Fonts-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../CSS/styleDos.css"> <!--CSS con SASS-->
     <title>Farmacia - Conocenos</title>
@@ -50,7 +51,7 @@
         <!--Comienza Miriam-->
         <div class="miriam__cuerpo">
             <h3 class="miriam__titulos">Miriam Aguirre</h3>
-            <img class="miriam__img animate__animated animate__zoomIn" src="../fotos/miriam.jpg" alt="foto Miriam">
+            <img class="miriam__img animate__animated animate__flipInX" data-aos="flip-up" src="../fotos/miriam.jpg" alt="foto Miriam">
             <p class="miriam__parrafo"> Farmacéutica UBA- M.P. 11618 
             Directora técnica </p>                             
            <p class="miriam__parrafo">Me recibí en el año 1987 e inicie mi ejercicio profesional en el Hospital Posadas y en el Hospital Larcade. Poco tiempo después junto a mi marido tomamos la decisión de independizarnos, pensando que era la mejor opción para la conjunción trabajo y familia.
@@ -61,7 +62,7 @@
         <!--Comienza Fran-->
         <div class="fran__cuerpo">
             <h3 class="fran__titulos">Francisco Deandreis Aguirre</h3>
-            <img class="fran__img animate__animated animate__zoomIn" src="../fotos/fran.jpg" alt="foto Fran">
+            <img class="fran__img" data-aos="flip-up" src="../fotos/fran.jpg" alt="foto Fran">
             <p class="fran__parrafos">Nuestro hijo y estudiante de farmacia ... el Heredero </p>    
             <p class="fran__parrafos">Hoy nos enorgullece que haya tomado la decisión de continuar con la profesión y el camino recorrido.
                Su primera profesión fue bartender pero hace poco fue conquistado por el mundo de los medicamentos.  Es clave en la incorporación de tecnología, la comprensión y uso de la misma. Es el hábil operador de nuestro whatsapp y casi siempre del teléfono. 
@@ -72,7 +73,7 @@
         <!--Comienza Carina-->
         <div class="carina__cuerpo">
             <h3 class="carina__titulos">Carina Cañete</h3>
-            <img class="carina__img animate__animated animate__zoomIn" src="../fotos/carina.jpg" alt="Foto carina">
+            <img class="carina__img" data-aos="flip-up" src="../fotos/carina.jpg" alt="Foto carina">
             <p class="carina__parrafos">Nuestras manos más valiosas. Hace ya años que nos acompaña, comienza a ser parte del barrio y es un engranaje indispensable en el desarrollo de nuestras tareas.      
             La tarea de las farmacias en general es muy compleja, el procesamiento de las recetas y la trazabilidad de los medicamentos es muy laborioso, sin ella sería imposible.</p>
         </div>
@@ -102,5 +103,9 @@
         </div>
     </footer>
     <!--Termina Footer-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
