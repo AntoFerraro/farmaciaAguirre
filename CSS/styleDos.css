@@ -1,0 +1,985 @@
+/*Todos los titulos con fondo color, puesto para usar extend*/
+.titulosConFondo, .titulo__horaserv .titulo__horarios, .servicios__titulos .servicios__titulo, .titulos__origen .titulos__te, .madre__contenedor .madre__titulo, .titulos__contenedor .titulos__consejos {
+  background-color: #00a678;
+  text-align: center;
+  font-style: italic;
+  font-size: 35px;
+  margin-top: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  /*puse todo esto porque no me lo tomaba por bootstrap*/
+  font-weight: 500; }
+
+/*Todos los titulos que se acomodan izquierda o derecha*/
+/*Titulos de pagina Productos Naturales*/
+/*imagenes de galeria*/
+/*imagenes max600px*/
+/*imagenes tintura*/
+/*VARIABLES*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*ID para todas las paginas*/
+#body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: larger;
+  font-weight: 500; }
+
+#mainPadding {
+  padding: 5px 5px 20px 8px; }
+
+/*COMIENZA MENU*/
+.header {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: auto;
+  background-image: url(../fotos/fondoSolo.png);
+  z-index: 9999; }
+  .header__nav {
+    height: 100%; }
+  .header__lista {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    font-size: large;
+    padding-left: 0; }
+  .header__item {
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center; }
+  .header__link {
+    color: #3d3b3b;
+    text-decoration: none;
+    transition: all 3s; }
+    .header__link:hover {
+      color: #106868;
+      font-size: larger; }
+    .header__link--logo {
+      height: 70px;
+      width: 70px; }
+
+/*TERMINA MENU*/
+/*INDEX*/
+#mainIndex {
+  margin: 0;
+  padding: 0; }
+
+.historia__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.904);
+  color: whitesmoke; }
+  .historia__article .historia__div {
+    background-image: url(../fotos/fondoGaleriaIndex.png);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    justify-content: center; }
+    .historia__article .historia__div--carousel {
+      width: 680px;
+      height: 400px; }
+  .historia__article .historia__titulo {
+    font-style: italic;
+    font-size: xx-large;
+    text-shadow: 1px 1px turquoise;
+    color: #025757; }
+  .historia__article .historia__parrafo {
+    text-align: center;
+    line-height: 30px;
+    padding-left: 3px;
+    display: flex;
+    width: 800px;
+    text-shadow: 1px 1px ghostwhite; }
+
+.corona__article {
+  background-color: rgba(0, 0, 0, 0.904);
+  color: whitesmoke; }
+  .corona__article .corona__titulo {
+    text-align: center;
+    border-top: solid rgba(143, 142, 142, 0.788) 2px;
+    font-style: italic;
+    font-size: xx-large;
+    text-shadow: 1px 1px turquoise;
+    color: #025757; }
+  .corona__article .corona__parrafo {
+    text-align: center;
+    line-height: 30px;
+    padding-left: 3px;
+    padding-bottom: 5px; }
+    .corona__article .corona__parrafo--margen {
+      margin: 0;
+      padding-bottom: 10px;
+      text-align: center; }
+  .corona__article .corona__lista {
+    background-color: rgba(248, 248, 255, 0.322);
+    border-radius: 20px; }
+    .corona__article .corona__lista .corona__items {
+      line-height: 30px;
+      list-style-type: square;
+      margin-left: 25px;
+      align-items: center;
+      text-shadow: 1px 1px darkslategrey; }
+
+.origen__article {
+  background-color: rgba(0, 0, 0, 0.904);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .origen__article .origen__titulo {
+    border-top: solid rgba(143, 142, 142, 0.788) 2px;
+    font-style: italic;
+    font-size: xx-large;
+    text-shadow: 1px 1px turquoise;
+    color: #025757;
+    text-align: center;
+    width: 100%; }
+  .origen__article .origen__parrafo {
+    line-height: 30px;
+    padding-left: 3px;
+    width: 85%;
+    text-align: center;
+    text-shadow: 1px 1px ghostwhite; }
+  .origen__article .origen__img {
+    width: 70%;
+    height: 600px;
+    padding-bottom: 20px; }
+
+/*QUIENES SOMOS*/
+#mainSomos {
+  background-image: url(../fotos/fondoQuienes.jpeg); }
+
+.titulos__somos .titulos__principal {
+  color: #038661;
+  text-align: center;
+  padding-top: 15px;
+  font-size: xx-large;
+  text-shadow: 1px 1px turquoise; }
+
+.miriam__cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .miriam__cuerpo .miriam__titulos {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 25px 0 3px 0;
+    border-bottom: grey 2px double;
+    margin: 0 0 25px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    /*puse todo esto porque no me lo tomaba por bootstrap*/
+    font-weight: 500;
+    font-size: larger;
+    width: 100%; }
+  .miriam__cuerpo .miriam__img {
+    width: 470px;
+    height: 370px; }
+  .miriam__cuerpo .miriam__parrafo {
+    line-height: 35px;
+    padding-left: 3px;
+    text-align: center;
+    text-shadow: 2px 2px whitesmoke; }
+
+.fran__cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .fran__cuerpo .fran__titulos {
+    text-align: right;
+    text-transform: uppercase;
+    padding: 25px 0 3px 0;
+    border-bottom: grey 2px double;
+    margin: 0 10px 25px 0;
+    font-family: 'Ubuntu', sans-serif;
+    /*puse todo esto porque no me lo tomaba por bootstrap*/
+    font-weight: 500;
+    font-size: larger;
+    width: 100%; }
+  .fran__cuerpo .fran__img {
+    width: 470px;
+    height: 300px; }
+  .fran__cuerpo .fran__parrafos {
+    line-height: 35px;
+    padding-left: 3px;
+    text-align: center;
+    text-shadow: 2px 2px whitesmoke; }
+
+.carina__cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .carina__cuerpo .carina__titulos {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 25px 0 3px 0;
+    border-bottom: grey 2px double;
+    margin: 0 0 25px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    /*puse todo esto porque no me lo tomaba por bootstrap*/
+    font-weight: 500;
+    font-size: larger;
+    width: 100%; }
+  .carina__cuerpo .carina__img {
+    width: 480px;
+    height: 420px; }
+  .carina__cuerpo .carina__parrafos {
+    line-height: 35px;
+    padding-left: 3px;
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px whitesmoke; }
+
+/*HORARIOS Y SERVICIOS*/
+#mainHoraServ {
+  padding: 5px 5px 20px 8px;
+  background-image: url(../fotos/fondoHora.jpg);
+  background-size: cover; }
+
+.horarios__principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "reloj enfermera" "hora link";
+  justify-items: center;
+  padding-top: 25px; }
+  .horarios__principal .horarios__horaimg {
+    width: 100px;
+    height: 100px;
+    grid-area: reloj; }
+  .horarios__principal .horarios__parrafo {
+    grid-area: hora;
+    font-size: x-large;
+    text-align: center; }
+  .horarios__principal .horarios__turnoimg {
+    grid-area: enfermera;
+    width: 100px;
+    height: 100px; }
+  .horarios__principal .horarios__link {
+    grid-area: link;
+    font-size: x-large;
+    text-decoration: none; }
+
+.servicios__titulos .servicios__atencion {
+  text-align: left;
+  text-transform: uppercase;
+  padding: 25px 0 3px 0;
+  border-bottom: grey 2px double;
+  margin: 0 0 25px 10px;
+  font-family: 'Ubuntu', sans-serif;
+  /*puse todo esto porque no me lo tomaba por bootstrap*/
+  font-weight: 500;
+  font-size: larger;
+  width: 100%; }
+
+.sociales__contenedor .sociales__parrafo {
+  line-height: 30px;
+  padding-left: 3px; }
+
+.sociales__contenedor .sociales__lista {
+  display: inline-block;
+  position: relative;
+  /*left en movile*/
+  padding-bottom: 15px; }
+  .sociales__contenedor .sociales__lista .sociales__items {
+    line-height: 30px;
+    list-style-type: square;
+    margin-left: 25px; }
+
+.entregas__contenedor .entregas__titulo {
+  text-align: right;
+  text-transform: uppercase;
+  padding: 25px 0 3px 0;
+  border-bottom: grey 2px double;
+  margin: 0 10px 25px 0;
+  font-family: 'Ubuntu', sans-serif;
+  /*puse todo esto porque no me lo tomaba por bootstrap*/
+  font-weight: 500;
+  font-size: larger;
+  width: 100%; }
+
+.entregas__contenedor .entregas__parrafo {
+  line-height: 30px;
+  padding-left: 3px; }
+
+.entregas__contenedor .entregas__fotos {
+  display: flex;
+  justify-content: space-evenly; }
+  .entregas__contenedor .entregas__fotos .fotos__empresas {
+    width: 30%;
+    height: auto; }
+
+/*Termina Horarios y servicios*/
+/*PRODUCTOS NATURALES*/
+.titulos__origen {
+  height: 250px;
+  width: 100%;
+  padding-top: 100px;
+  background-image: url(../fotos/teHebras.jpg); }
+  .titulos__origen .titulos__oculto {
+    display: none; }
+
+.preparacion__te {
+  border: gray 2px solid;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  text-align: center; }
+  .preparacion__te .preparacion__metodo {
+    font-size: 20px;
+    color: indigo; }
+  .preparacion__te .preparacion__parrafo {
+    line-height: 30px;
+    padding-left: 3px; }
+
+/*Comienzan tinturas*/
+.tintura__contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px;
+  grid-template-areas: "echinacea tilia" "uncaria valeriana"; }
+  .tintura__contenedor .tintura__echinacea {
+    width: 350px;
+    height: 400px;
+    grid-area: echinacea;
+    justify-self: center; }
+  .tintura__contenedor .tintura__tilia {
+    width: 350px;
+    height: 400px;
+    grid-area: tilia;
+    justify-self: center; }
+  .tintura__contenedor .tintura__uncaria {
+    width: 350px;
+    height: 400px;
+    grid-area: uncaria;
+    justify-self: center; }
+  .tintura__contenedor .tintura__valeriana {
+    width: 350px;
+    height: 400px;
+    grid-area: valeriana;
+    justify-self: center; }
+
+/*Termina Productos Naturales*/
+/*CONSEJOS DE SALUD*/
+#mainSalud {
+  padding: 5px 5px 20px 8px;
+  background-image: url(../fotos/saludFondo.jpg);
+  background-size: cover; }
+
+.titulos__contenedor .titulos__mantenimiento {
+  text-align: left;
+  text-transform: uppercase;
+  padding: 25px 0 3px 0;
+  border-bottom: grey 2px double;
+  margin: 0 0 25px 10px;
+  font-family: 'Ubuntu', sans-serif;
+  /*puse todo esto porque no me lo tomaba por bootstrap*/
+  font-weight: 500;
+  font-size: larger;
+  width: 100%; }
+
+.medicamentos__contenedor .medicamentos__titulo {
+  text-align: right;
+  text-transform: uppercase;
+  padding: 25px 0 3px 0;
+  border-bottom: grey 2px double;
+  margin: 0 10px 25px 0;
+  font-family: 'Ubuntu', sans-serif;
+  /*puse todo esto porque no me lo tomaba por bootstrap*/
+  font-weight: 500;
+  font-size: larger;
+  width: 100%; }
+
+.medicamentos__contenedor .medicamentos__lista {
+  background-color: rgba(248, 248, 255, 0.445);
+  border-radius: 20px;
+  font-weight: 600; }
+  .medicamentos__contenedor .medicamentos__lista .medicamentos__item {
+    line-height: 30px;
+    list-style-type: square;
+    margin-left: 25px; }
+
+/*Termina Consejos salud*/
+/*CONTACTO*/
+.contacto__fondo {
+  background-image: url(../fotos/telefono.png);
+  background-size: cover; }
+  .contacto__fondo .contacto__titulo {
+    color: snow;
+    text-align: center;
+    padding-top: 15px;
+    font-size: xx-large;
+    text-shadow: 2px 2px black; }
+  .contacto__fondo .contacto__formulario {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px; }
+    .contacto__fondo .contacto__formulario .formulario__letra {
+      font-size: larger;
+      font-weight: 600;
+      color: #025757;
+      background-color: rgba(248, 248, 255, 0.527);
+      border-radius: 20px;
+      padding: 6px 6px 6px 6px; }
+  .contacto__fondo .contacto__whatsapp {
+    font-size: x-large;
+    width: 600px;
+    transition: all 3s;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(248, 248, 255, 0.527);
+    border-radius: 20px; }
+    .contacto__fondo .contacto__whatsapp .contacto__parrafo {
+      line-height: 30px;
+      padding-left: 3px; }
+  .contacto__fondo .contacto__mapa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: x-large; }
+    .contacto__fondo .contacto__mapa .contacto__direccion {
+      animation-name: direccion;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      font-weight: 500;
+      font-size: x-large; }
+
+@keyframes direccion {
+  from {
+    transform: translate(0px, 20px); }
+  to {
+    color: darkslateblue; } }
+
+/*COMIENZA FOOTER*/
+.footer {
+  background-image: linear-gradient(90deg, #f2f2f4 26%, #2bb38c 78%);
+  padding-left: 10px;
+  height: 180px;
+  display: flex;
+  align-items: center; }
+  .footer .footer__div {
+    width: 26%; }
+    .footer .footer__div .div__parrafo {
+      color: #3b3b3b;
+      font-size: 18px;
+      line-height: 25px; }
+    .footer .footer__div .div__img {
+      width: 40px;
+      height: 40px; }
+  .footer .footer__redes {
+    display: flex;
+    flex-direction: column; }
+    .footer .footer__redes .redes__img {
+      width: 40px;
+      height: 40px;
+      transition: all 3s; }
+      .footer .footer__redes .redes__img:hover {
+        width: 70px;
+        height: 70px; }
+
+/*TERMINA FOOTER*/
+/*Comienza extra small divices celulares*/
+@media only screen and (max-width: 600px) {
+  /*Menu*/
+  .header {
+    position: unset;
+    height: 100px;
+    width: auto;
+    background-image: linear-gradient(90deg, #f2f2f4 26%, #2bb38c 78%); }
+    .header__lista {
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      font-size: medium; }
+    .header .header__link--logo {
+      height: 60px;
+      width: 60px; }
+  /*Termina Menu*/
+  /*INDEX*/
+  .historia__article .historia__div--carousel {
+    width: 480px;
+    height: 300px; }
+  .historia__article .historia__parrafo {
+    width: 90%; }
+  .origen__article .origen__img {
+    width: 70%;
+    height: 60%;
+    padding-bottom: 20px; }
+  /*termina Index*/
+  /*QUIENES SOMOS*/
+  .miriam__cuerpo .miriam__img {
+    width: 90%;
+    height: 85%; }
+  .fran__cuerpo .fran__img {
+    width: 90%;
+    height: 85%; }
+  .carina__cuerpo .carina__img {
+    width: 90%;
+    height: 85%; }
+  /*Termina Quienes Somos*/
+  /*HORARIOS Y SERVICIOS*/
+  .horarios__principal .horarios__parrafo {
+    font-size: medium;
+    font-weight: 900; }
+  .horarios__principal .horarios__link {
+    font-size: large;
+    font-weight: 800; }
+  .sociales__contenedor .sociales__lista {
+    left: 100px; }
+  /*termina Horarios y servicios*/
+  /*PRODUCTOS NATURALES*/
+  .galeria__contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(3, 350px) 100px repeat(8, 350px) 100px repeat(3, 350px);
+    grid-template-areas: "antigripal" "teVerde" " menta" "moringa" "digestivo" "anis" "cedron" "incayuyo" "manzanilla" "marcela" "poleo" "burro" "pollo" "diuretico" "caballo" "olivo" "carnicera"; }
+    .galeria__contenedor .galeria__antigripal {
+      text-align: left;
+      text-transform: uppercase;
+      padding-top: 25px;
+      border-bottom: grey 2px double;
+      margin: 0 0 35px 10px;
+      grid-area: antigripal;
+      font-family: 'Ubuntu', sans-serif;
+      /*puse todo esto porque no me lo tomaba por bootstrap*/
+      font-weight: 500; }
+    .galeria__contenedor .galeria__rosa {
+      width: 250px;
+      height: 300px;
+      grid-area: teVerde;
+      justify-self: center; }
+    .galeria__contenedor .galeria__menta {
+      width: 250px;
+      height: 300px;
+      grid-area: menta;
+      justify-self: center; }
+    .galeria__contenedor .galeria__moringa {
+      width: 250px;
+      height: 300px;
+      grid-area: moringa;
+      justify-self: center; }
+    .galeria__contenedor .galeria__relajante {
+      text-align: left;
+      text-transform: uppercase;
+      padding-top: 25px;
+      border-bottom: grey 2px double;
+      margin: 0 0 35px 10px;
+      grid-area: digestivo;
+      font-family: 'Ubuntu', sans-serif;
+      /*puse todo esto porque no me lo tomaba por bootstrap*/
+      font-weight: 500; }
+    .galeria__contenedor .galeria__anis {
+      width: 250px;
+      height: 300px;
+      grid-area: anis;
+      justify-self: center; }
+    .galeria__contenedor .galeria__cedron {
+      width: 250px;
+      height: 300px;
+      grid-area: cedron;
+      justify-self: center; }
+    .galeria__contenedor .galeria__incayuyo {
+      width: 250px;
+      height: 300px;
+      grid-area: incayuyo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__manzanilla {
+      width: 250px;
+      height: 300px;
+      grid-area: manzanilla;
+      justify-self: center; }
+    .galeria__contenedor .galeria__marcela {
+      width: 250px;
+      height: 300px;
+      grid-area: marcela;
+      justify-self: center; }
+    .galeria__contenedor .galeria__poleo {
+      width: 250px;
+      height: 300px;
+      grid-area: poleo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__burro {
+      width: 250px;
+      height: 300px;
+      grid-area: burro;
+      justify-self: center; }
+    .galeria__contenedor .galeria__pollo {
+      width: 250px;
+      height: 300px;
+      grid-area: pollo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__diuretico {
+      text-align: left;
+      text-transform: uppercase;
+      padding-top: 25px;
+      border-bottom: grey 2px double;
+      margin: 0 0 35px 10px;
+      grid-area: diuretico;
+      font-family: 'Ubuntu', sans-serif;
+      /*puse todo esto porque no me lo tomaba por bootstrap*/
+      font-weight: 500; }
+    .galeria__contenedor .galeria__caballo {
+      width: 250px;
+      height: 300px;
+      grid-area: caballo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__olivo {
+      width: 250px;
+      height: 300px;
+      grid-area: olivo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__carnicera {
+      width: 250px;
+      height: 300px;
+      grid-area: carnicera;
+      justify-self: center; }
+  .tintura__contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 350px);
+    grid-template-areas: "echinacea" "tilia" "uncaria" "valeriana"; }
+    .tintura__contenedor .tintura__echinacea {
+      width: 250px;
+      height: 300px;
+      grid-area: echinacea;
+      justify-self: center; }
+    .tintura__contenedor .tintura__tilia {
+      width: 250px;
+      height: 300px;
+      grid-area: tilia;
+      justify-self: center; }
+    .tintura__contenedor .tintura__uncaria {
+      width: 250px;
+      height: 300px;
+      grid-area: uncaria;
+      justify-self: center; }
+    .tintura__contenedor .tintura__valeriana {
+      width: 250px;
+      height: 300px;
+      grid-area: valeriana;
+      justify-self: center; }
+  /*CONTACTO*/
+  .contacto__fondo {
+    background-image: url(../fotos/telefono.png); }
+    .contacto__fondo .contacto__formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 30px; }
+    .contacto__fondo .contacto__whatsapp {
+      font-size: x-large;
+      width: 550px;
+      background-image: linear-gradient(to bottom, rgba(89, 89, 238, 0.452), rgba(119, 107, 107, 0.521)); }
+    .contacto__fondo .contacto__mapa {
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: x-large; }
+      .contacto__fondo .contacto__mapa .contacto__maps {
+        height: 400px;
+        width: 500px; }
+  /*FOOTER*/
+  .footer {
+    height: 160px;
+    background-image: linear-gradient(90deg, #f2f2f4 26%, #2bb38c 78%); }
+    .footer .footer__div .div__img {
+      width: 25px;
+      height: 25px; }
+  /*Termina Footer*/ }
+
+/*Termina extra small divices celulares*/
+/*Comienza tablet*/
+@media only screen and (min-width: 600px) {
+  .header {
+    position: unset;
+    height: 100px;
+    width: auto;
+    background-image: linear-gradient(90deg, #f2f2f4 26%, #2bb38c 78%); }
+    .header .header__link--logo {
+      height: 60px;
+      width: 60px; }
+  /*INDEX*/
+  .historia__article .historia__parrafo {
+    width: 600px; }
+  .origen__article .origen__img {
+    width: 70%;
+    height: 400px;
+    padding-bottom: 20px; }
+  /*Termina Index*/
+  /*QUIENES SOMOS*/
+  .miriam__cuerpo .miriam__img {
+    width: 470px;
+    height: 370px; }
+  .fran__cuerpo .fran__img {
+    width: 470px;
+    height: 300px; }
+  .carina__cuerpo .carina__img {
+    width: 470px;
+    height: 420px; }
+  /*Termina Quienes Somos*/
+  /*HORARIOS Y SERVICIOS*/
+  .sociales__contenedor .sociales__lista {
+    left: 200px; }
+  /*termina Horarios y servicios*/
+  /*PRODUCTOS NATURALES*/
+  .galeria__contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 400px 400px 100px 400px 400px 400px 400px 100px 400px 400px;
+    grid-template-areas: "antigripal antigripal" "teVerde menta" "moringa ." "digestivo digestivo" "anis cedron " "incayuyo manzanilla" "marcela poleo" "burro pollo " "diuretico diuretico" "caballo olivo" "carnicera ."; }
+    .galeria__contenedor .galeria__antigripal {
+      text-align: left;
+      text-transform: uppercase;
+      padding-top: 25px;
+      border-bottom: grey 2px double;
+      margin: 0 0 35px 10px;
+      grid-area: antigripal;
+      font-family: 'Ubuntu', sans-serif;
+      /*puse todo esto porque no me lo tomaba por bootstrap*/
+      font-weight: 500; }
+    .galeria__contenedor .galeria__rosa {
+      width: 350px;
+      height: 400px;
+      grid-area: teVerde;
+      justify-self: center; }
+    .galeria__contenedor .galeria__menta {
+      width: 350px;
+      height: 400px;
+      grid-area: menta;
+      justify-self: center; }
+    .galeria__contenedor .galeria__moringa {
+      width: 350px;
+      height: 400px;
+      grid-area: moringa;
+      justify-self: center; }
+    .galeria__contenedor .galeria__relajante {
+      text-align: right;
+      text-transform: uppercase;
+      padding-top: 25px;
+      border-bottom: grey 2px double;
+      margin: 0 10px 35px 0;
+      grid-area: digestivo;
+      font-family: 'Ubuntu', sans-serif;
+      /*puse todo esto porque no me lo tomaba por bootstrap*/
+      font-weight: 500; }
+    .galeria__contenedor .galeria__anis {
+      width: 350px;
+      height: 400px;
+      grid-area: anis;
+      justify-self: center; }
+    .galeria__contenedor .galeria__cedron {
+      width: 350px;
+      height: 400px;
+      grid-area: cedron;
+      justify-self: center; }
+    .galeria__contenedor .galeria__incayuyo {
+      width: 350px;
+      height: 400px;
+      grid-area: incayuyo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__manzanilla {
+      width: 350px;
+      height: 400px;
+      grid-area: manzanilla;
+      justify-self: center; }
+    .galeria__contenedor .galeria__marcela {
+      width: 350px;
+      height: 400px;
+      grid-area: marcela;
+      justify-self: center; }
+    .galeria__contenedor .galeria__poleo {
+      width: 350px;
+      height: 400px;
+      grid-area: poleo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__burro {
+      width: 350px;
+      height: 400px;
+      grid-area: burro;
+      justify-self: center; }
+    .galeria__contenedor .galeria__pollo {
+      width: 350px;
+      height: 400px;
+      grid-area: pollo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__diuretico {
+      text-align: left;
+      text-transform: uppercase;
+      padding-top: 25px;
+      border-bottom: grey 2px double;
+      margin: 0 0 35px 10px;
+      grid-area: diuretico;
+      font-family: 'Ubuntu', sans-serif;
+      /*puse todo esto porque no me lo tomaba por bootstrap*/
+      font-weight: 500; }
+    .galeria__contenedor .galeria__caballo {
+      width: 350px;
+      height: 400px;
+      grid-area: caballo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__olivo {
+      width: 350px;
+      height: 400px;
+      grid-area: olivo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__carnicera {
+      width: 350px;
+      height: 400px;
+      grid-area: carnicera;
+      justify-self: center; } }
+
+/*Termina tablet*/
+/*Comienza Pantallas 992px*/
+@media only screen and (min-width: 992px) {
+  .header {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: auto;
+    background-image: url(../fotos/fondoSolo.png); }
+    .header .header__link--logo {
+      height: 55px;
+      width: 55px; }
+  /*INDEX*/
+  .historia__article .historia__parrafo {
+    width: 800px; }
+  .origen__article .origen__img {
+    width: 60%;
+    height: 600px;
+    padding-bottom: 20px; }
+  /*termina Index*/
+  /*QUIENES SOMOS*/
+  .miriam__cuerpo .miriam__img {
+    width: 470px;
+    height: 370px; }
+  .miriam__cuerpo .miriam__parrafo {
+    width: 80%; }
+  .fran__cuerpo .fran__img {
+    width: 470px;
+    height: 300px; }
+  .fran__cuerpo .fran__parrafos {
+    width: 80%; }
+  .carina__cuerpo .carina__img {
+    width: 480px;
+    height: 420px; }
+  .carina__cuerpo .carina__parrafos {
+    width: 80%; }
+  /*Termina Quienes Somos*/
+  /*HORARIOS Y SERVICIOS*/
+  .sociales__contenedor .sociales__lista {
+    left: 430px; }
+  /*termina Horarios y servicios*/
+  /*PRODUCTOS NATURALES*/
+  .galeria__contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 400px 100px 400px 400px 400px 100px 400px;
+    grid-template-areas: "antigripal antigripal antigripal" " teVerde menta moringa" "digestivo digestivo digestivo" "anis cedron incayuyo" "manzanilla marcela poleo" "burro pollo ." "diuretico diuretico diuretico" "caballo olivo carnicera"; }
+    .galeria__contenedor .galeria__antigripal {
+      text-align: left;
+      text-transform: uppercase;
+      padding-top: 25px;
+      border-bottom: grey 2px double;
+      margin: 0 0 35px 10px;
+      grid-area: antigripal;
+      font-family: 'Ubuntu', sans-serif;
+      /*puse todo esto porque no me lo tomaba por bootstrap*/
+      font-weight: 500; }
+    .galeria__contenedor .galeria__rosa {
+      width: 350px;
+      height: 400px;
+      grid-area: teVerde;
+      justify-self: center; }
+    .galeria__contenedor .galeria__menta {
+      width: 350px;
+      height: 400px;
+      grid-area: menta;
+      justify-self: center; }
+    .galeria__contenedor .galeria__moringa {
+      width: 350px;
+      height: 400px;
+      grid-area: moringa;
+      justify-self: center; }
+    .galeria__contenedor .galeria__relajante {
+      text-align: right;
+      text-transform: uppercase;
+      padding-top: 25px;
+      border-bottom: grey 2px double;
+      margin: 0 10px 35px 0;
+      grid-area: digestivo;
+      font-family: 'Ubuntu', sans-serif;
+      /*puse todo esto porque no me lo tomaba por bootstrap*/
+      font-weight: 500; }
+    .galeria__contenedor .galeria__anis {
+      width: 350px;
+      height: 400px;
+      grid-area: anis;
+      justify-self: center; }
+    .galeria__contenedor .galeria__cedron {
+      width: 350px;
+      height: 400px;
+      grid-area: cedron;
+      justify-self: center; }
+    .galeria__contenedor .galeria__incayuyo {
+      width: 350px;
+      height: 400px;
+      grid-area: incayuyo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__manzanilla {
+      width: 350px;
+      height: 400px;
+      grid-area: manzanilla;
+      justify-self: center; }
+    .galeria__contenedor .galeria__marcela {
+      width: 350px;
+      height: 400px;
+      grid-area: marcela;
+      justify-self: center; }
+    .galeria__contenedor .galeria__poleo {
+      width: 350px;
+      height: 400px;
+      grid-area: poleo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__burro {
+      width: 350px;
+      height: 400px;
+      grid-area: burro;
+      justify-self: center; }
+    .galeria__contenedor .galeria__pollo {
+      width: 350px;
+      height: 400px;
+      grid-area: pollo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__diuretico {
+      text-align: left;
+      text-transform: uppercase;
+      padding-top: 25px;
+      border-bottom: grey 2px double;
+      margin: 0 0 35px 10px;
+      grid-area: diuretico;
+      font-family: 'Ubuntu', sans-serif;
+      /*puse todo esto porque no me lo tomaba por bootstrap*/
+      font-weight: 500; }
+    .galeria__contenedor .galeria__caballo {
+      width: 350px;
+      height: 400px;
+      grid-area: caballo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__olivo {
+      width: 350px;
+      height: 400px;
+      grid-area: olivo;
+      justify-self: center; }
+    .galeria__contenedor .galeria__carnicera {
+      width: 350px;
+      height: 400px;
+      grid-area: carnicera;
+      justify-self: center; } }
+
+/*Termina Pantallas 992px*/

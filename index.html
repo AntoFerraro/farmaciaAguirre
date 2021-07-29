@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="farmacia castelar, de turno, bienestar, Aguirre, negocio familiar, consejos de salud, obra social galeno, te medicinal"> 
+    <meta name="description" content="Farmacia del barrio de Castelar fundada en 1993, ubicada en Av.Santa Rosa. Atendemos de Lunes a Sabados">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Comienza Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> <!--Finaliza Fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--Efecto Foto fachadaLocal-->
+    <link rel="stylesheet" href="CSS/styleDos.css"> <!--CSS con SASS-->
+    <title>Farmacia Aguirre</title>
+</head>
+<body id="body"> 
+    <!--Comienza Menu-->
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__lista">
+                <li class="header__item">
+                    <a class="header__link" href="index.html"> <img class="header__link--logo" src="fotos/logoSolo.png" alt="logo"></a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="paginas\QuienesSomos.html"> Quienes Somos</a>
+                </li> 
+                <li class="header__item">
+                    <a class="header__link" href="paginas\HorariosServicios.html">Horarios y Servicios</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="paginas\ProductosNaturales.html">Productos Naturales</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="paginas\ConsejosSalud.html">Consejos de Salud</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="paginas\Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Termina Menu-->
+    <main>
+     
+            <!--Comienza Historia-->
+        <section>
+            <article class="historia__article">
+                <!--Comienza Carousel Fotos-->
+                <div class="historia__div">
+                    <div id="carouselSlide" class="historia__div--carousel animate__animated animate__fadeInDown carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="fotos/fachadaLocal.jpg" class="historia__div--carousel d-block w-100" alt="fachada">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/localAdentro.png" class="historia__div--carousel d-block w-100" alt="dentroLocal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/fachadaLocalCerca.jpg" class="historia__div--carousel d-block w-100" alt="fachadaCerca">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/localAdentro2.jpg" class="historia__div--carousel d-block w-100" alt="dentroLocal2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Termina Carousel Fotos-->
+                <h2 class="historia__titulo">Nuestra Historia</h2> <br>
+                <p class="historia__parrafo">Somos una farmacia de barrio fundada en 1993 que se enorgullece de conocer a sus pacientes y de brindarles una atencion personalizada. Una familia que se iniciaba además de un emprendimiento comercial y profesional en el centro nuestras vidas.
+                    Así transcurrieron ya muchos años, hemos crecido nosotros y las personas para las cuales trabajamos cuidando de su salud, de esta forma es que hoy atendemos a los hijos y nietos de nuestros primeros pacientes. 
+                </p>
+            </article>
+            <!--Finaliza Historia-->
+
+            <!--Comienza Coronavirus-->
+            <article class="corona__article">
+                <h2 class="corona__titulo">Coronavirus</h2> <br>
+                <p class="corona__parrafo">Dada la situación epidemiológica que vivimos, todos tenemos la obligación ciudadana de cuidarnos. Por lo tanto les ofrecemos alcohol en gel para su uso, y no podrán ingresar sin el uso de un tapabocas.
+                     En nuestro local no podrán permanecer más de 2 personas a la vez por lo tanto les pedimos, por respeto a los que esperan afuera, venir preparados, que significa:</p>
+                <ul class="corona__lista">
+                    <li class="corona__items">Tener tus recetas y credencial a mano.</li>
+                    <li class="corona__items">De tener recetas digitales enviarlas previamente, nunca se sabe que ocurre con la conectividad en algunos momentos.</li>
+                    <li class="corona__items">Traer envases anteriores o anotadas las marcas que quieres de tus medicamentos para acelerar el proceso de elección de los mismos si son habituales.</li>
+                    <li class="corona__items">Si podés, hace previamente tu pedido para que todo esto esté resuelto cuando llegues al local.</li>
+                </ul>
+                <p class="corona__parrafo--margen">Tené en cuenta que hace frío y es muy molesto esperar afuera para vos y todos los demás.</p>
+            </article>
+            <!--Finaliza Coronavirus-->
+
+            <!--Comienza Promocion-->
+            <article class="origen__article">
+                <h2 class="origen__titulo">Nueva linea de Productos Naturales</h2>
+                <p class="origen__parrafo">Ahora disponible en nuestro local, "Origen" nuestra marca de té y tintura madre totalmente natural, hecho para tratar
+                    sus malestares y satisfacer su paladar.
+                </p>
+                <img class="origen__img" src="fotos/hojasTeOrigen.png" alt="promoTe">
+            </article>
+            <!--Finaliza Promocion-->
+        </section>
+        <!--Javascript de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footer__div">
+            <p class="div__parrafo">1993-2021 Farmacia Aguirre</p>
+            <img class="div__img" src="fotos/farmaciaDibujo.png" alt="dibujoFarmacia">
+        </div>
+        <div class="footer__div">
+            <img class="div__img" src="fotos/whatsapp.png" alt="whatsapp">
+            <p class="div__parrafo">whatsapp</p>
+            <p class="div__parrafo">011- 24811109</p>
+        </div>
+        <div class="footer__div">
+            <img class="div__img" src="fotos/direccion.png" alt="direccion">
+            <p class="div__parrafo">Direccion</p>
+            <p class="div__parrafo">Av.Santa Rosa 1109, CP:1712</p>
+        </div>
+        <div class="footer__redes">
+            <a class="redes__link" href="https://www.facebook.com/farmaciaaguirre" target="_blank"><img class="redes__img" src="fotos/facebook.png" alt="facebook"> </a>
+            <br>
+            <a class="redes__link" href="https://www.instagram.com/farmacia.aguirre/" target="_blank"> <img class="redes__img" src="fotos/instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

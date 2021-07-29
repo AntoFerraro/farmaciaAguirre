@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="farmacia castelar, de turno, bienestar, Aguirre, ubicacion negocio, consejos de salud, obra social galeno, telefono mensaje">
+    <meta name="description" content="Formulario para sus opiniones, WhatsappWeb y ubicacion.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Comienza Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> <!--Termina Fonts-->
+    <link rel="stylesheet" href="../CSS/styleDos.css"> <!--CSS con SASS-->
+    <title>Farmacia - Contacto</title>
+</head>
+<body id="body">
+    <!--Comienza Menu-->
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__lista">
+                <li class="header__item">
+                    <a class="header__link" href="../index.html"> <img class="header__link--logo"src="../fotos/logoSolo.png" alt="logo"></a>
+                </li> 
+                <li class="header__item">
+                    <a class="header__link" href="QuienesSomos.html"> Quienes Somos</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="HorariosServicios.html">Horarios y Servicios</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="ProductosNaturales.html">Productos Naturales</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="ConsejosSalud.html">Consejos de Salud</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Termina Menu-->
+    
+    <main class="contacto__fondo">
+        <h1 class="contacto__titulo">Sus consultas y opiniones:</h1>
+        <!--Comienza Div con Formulario y WhatsappWeb-->
+        <div class="contacto__formulario"> <!--FORMULARIO-->
+            <div class="formulario__letra">
+                <form action="" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input class="form-control" type="text" placeholder="Ingrese su nombre" aria-label="name">
+                                  
+                    <label for="lastName">Apellido:</label>
+                    <input class="form-control" type="text" placeholder="Ingrese su Apellido" aria-label="lastName">
+
+                    <div class="mb-3">
+                        <label for="emailControl" class="form-label">Correo Electronico:</label>
+                        <input type="email" class="form-control" id="emailControl" placeholder="Ingrese su e-mail">
+                    </div>
+
+                    <label for="estadoCivil"></label>
+                    <select name="estadoCivil">
+                        <option value="Soltera/o">Soltera/o</option>
+                        <option value="Casada/o">Casada/o</option>
+                        <option value="Viuda/o">Viuda/o</option>
+                        <option value="Divorciada/o">Divorciada/o</option>
+                    </select>
+
+                    <label for="newsletter">¿Desea recibir el Newsletter?</label>
+                    <input type="checkbox" name="newsletter">
+
+                    <div class="mb-3">
+                        <label for="textoControl" class="form-label">Comentarios:</label>
+                        <textarea class="form-control" placeholder="Deje sus Comentarios" id="textoControl" rows="3"></textarea>
+                    </div>                 
+                    <input class="btn btn-outline-danger" type="reset" value="Resetear Formulario"> 
+                    <input class="btn btn-outline-success" type="submit" value="Enviar Formulario">
+                </form>
+            </div>
+            <!--FIN FORMULARIO-->
+            
+            <!--Comienza WhatsappWeb-->
+            <div class="contacto__whatsapp">
+                <p class="contacto__parrafo">Para facilitar su comunicación con nosotros le dejamos el enlace a nuestro whatsapp:</p>
+                <a class="contacto__whatsapp" href="https://api.whatsapp.com/send?phone=541124811109&text=Hola" target="_blank">whatsapp Web</a>
+                <p>Solo aceptamos mensajes </p>
+            </div>
+            <!--Finaliza WhatsappWeb-->
+        </div>
+        <!--Finaliza Div con Formulario y WhatsappWeb-->
+
+        <!--Comienza Direccion y Mapa-->
+        <div class="contacto__mapa">
+            <p class="contacto__direccion">Nuestro local queda en Av. Santa Rosa 1109, Castelar</p> <!--El class googleMaps es de max600px-->
+            <iframe class="contacto__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3283040874035!2d-58.65960918476915!3d-34.64641088044846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf45551b0729%3A0x59e564cca1231954!2sSta%20Rosa%201109%2C%20B1712LSY%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1623631306569!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!--Finaliza Direccion y Mapa-->
+
+    </main>
+
+    <!--Comienza Footer-->
+    <footer class="footer">
+        <div class="footer__div">
+            <p class="div__parrafo">1993-2021 Farmacia Aguirre</p>
+            <img class="div__img" src="../fotos/farmaciaDibujo.png" alt="dibujoFarmacia">
+        </div>
+        <div class="footer__div">
+            <img class="div__img" src="../fotos/whatsapp.png" alt="whatsapp">
+            <p class="div__parrafo">whatsapp</p>
+            <p class="div__parrafo">011- 24811109</p>
+        </div>
+        <div class="footer__div">
+            <img class="div__img" src="../fotos/direccion.png" alt="direccion">
+            <p class="div__parrafo">Direccion</p>
+            <p class="div__parrafo">Av.Santa Rosa 1109, CP:1712</p>
+        </div>
+        <div class="footer__redes">
+            <a class="redes__link" href="https://www.facebook.com/farmaciaaguirre" target="_blank"><img class="redes__img" src="../fotos/facebook.png" alt="facebook"> </a>
+            <br>
+            <a class="redes__link" href="https://www.instagram.com/farmacia.aguirre/" target="_blank"> <img class="redes__img" src="../fotos/instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+    <!--Termina Footer-->
+
+</body>
+</html>

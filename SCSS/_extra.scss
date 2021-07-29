@@ -1,0 +1,61 @@
+/*Todos los titulos con fondo color, puesto para usar extend*/
+.titulosConFondo{
+    background-color: rgb(0, 166, 120);
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;/*puse todo esto porque no me lo tomaba por bootstrap*/
+    font-weight: 500;
+}
+/*Todos los titulos que se acomodan izquierda o derecha*/
+@mixin titulosCostados ($direccion, $margin){
+    text-align: $direccion;
+    text-transform: uppercase;
+    padding: 25px 0 3px 0;
+    border-bottom: grey 2px double;
+    margin: $margin;
+    font-family: 'Ubuntu', sans-serif;/*puse todo esto porque no me lo tomaba por bootstrap*/
+    font-weight: 500;
+    font-size: larger;
+    width: 100%;
+}
+
+/*Titulos de pagina Productos Naturales*/
+@mixin titulosProdNat ($direccion, $area, $margin){
+    text-align: $direccion;
+    text-transform: uppercase;
+    padding-top: 25px;
+    border-bottom: grey 2px double;
+    margin: $margin;
+    grid-area: $area;
+    font-family: 'Ubuntu', sans-serif;/*puse todo esto porque no me lo tomaba por bootstrap*/
+    font-weight: 500;
+}
+/*imagenes de galeria*/
+@mixin fotosGaleria ($area) {
+    width: 350px; 
+    height: 400px;
+    grid-area: $area;
+    justify-self: center;
+}
+
+/*imagenes max600px*/
+@mixin fotosMax600 ($area) {
+    width: 250px; 
+    height: 300px;
+    grid-area: $area;
+    justify-self: center;
+}
+
+/*imagenes tintura*/
+@mixin fotosTintura ($area) {
+    width: 350px; 
+    height: 400px;
+    grid-area: $area;
+    justify-self: center;
+}
+
+/*VARIABLES*/
+$colorGradiente:linear-gradient(90deg, rgba(242,242,244,1) 26%, rgba(43,179,140,1) 78%);
+$colorIndexTitulos: rgb(2, 87, 87);
