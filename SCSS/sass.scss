@@ -9,7 +9,7 @@
 }
 
 #mainPadding{
-    padding: 5px 5px 20px 8px;
+    padding: 5px 5px 20px 5px;
 }
 
 /*COMIENZA MENU*/
@@ -259,7 +259,7 @@
 /*HORARIOS Y SERVICIOS*/ 
 
 #mainHoraServ{
-    padding: 5px 5px 20px 8px;
+    padding: 5px 5px 20px 5px;
     background-image: url(../fotos/fondoHora.jpg);
     background-size: cover;
 }
@@ -291,6 +291,7 @@
         font-size: x-large;
         text-align: center;
         width: 80%;
+        padding-top: 20px;
     }
 
     .horarios__turnoimg{
@@ -323,7 +324,7 @@
     
     .sociales__parrafo{
         line-height: 30px;
-        padding-left: 3px;
+        padding-left: 3px;    
     }
 
     .sociales__lista{
@@ -508,6 +509,14 @@
         text-align: center;
         background-color: rgba(248, 248, 255, 0.527);
         border-radius: 20px;
+
+        .contacto__link{
+            text-decoration: none;
+            color: slateblue;
+            font-weight: 700; 
+            font-size: larger;
+            text-transform: uppercase;           
+        }
     
         .contacto__parrafo{
             line-height: 30px;
@@ -588,21 +597,36 @@
 @media only screen and (max-width:600px){
     /*Menu*/
     .header{
-        position: unset;
-        height: 100px;
-        width: auto;
-        background-image: $colorGradiente;
-
-        &__lista{
-            display: flex;
-            align-items: flex-end;
-            height: 100%;
-            font-size: medium;
+        height: 56px;
+       
+        &__nav{
+            display: none;
         }
 
-        .header__link--logo{
-            height: 60px;
-            width: 60px;
+        .burger{
+            background-color: #2bb38c;
+            height: 100%;
+            .navbar{
+                .navbar-brand{
+                    padding-left: 8px;
+                    letter-spacing: 4px;
+                    color: rgb(70, 68, 68);
+                    font-weight: 600;                    
+                    font-size: smaller;                    
+                }
+
+                &-collapse{
+                    .navbar-nav{
+                        .nav-item{
+                            padding-left: 25px; 
+                            
+                            .nav-link{
+                                color: rgb(230, 222, 226);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     /*Termina Menu*/
@@ -654,7 +678,10 @@
     /*HORARIOS Y SERVICIOS*/
 
     .horarios__principal{
-        .horarios__parrafo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 140px;
+
+        .horarios__parrafo{            
             font-size: medium;
             font-weight: 900;
         }
@@ -667,7 +694,7 @@
 
     .sociales__contenedor{
         .sociales__lista{
-            left: 100px;
+            left: 40px;
         }
     }
 
@@ -792,6 +819,24 @@
         }
     }
 
+    /*CONSEJOS DE SALUD*/ 
+
+    .cuadro__completo{
+        display: none;
+    }
+
+    .cuadro__cortado{
+        display: block;
+        font-size: medium;
+    }
+
+    .medicamentos__contenedor{
+        .medicamentos__titulo{
+            text-shadow: 1px 2px whitesmoke;
+        }
+    }
+    /*Finaliza consejos Salud*/
+
     /*CONTACTO*/
 
     .contacto__fondo{
@@ -808,7 +853,8 @@
 
         .contacto__whatsapp{
             font-size: x-large;
-            width: 550px;
+            margin-top: 25px;
+            width: 90%;
             background-image: linear-gradient(to bottom, rgba(89, 89, 238, 0.452), rgba(119, 107, 107, 0.521));
         }
 
@@ -820,9 +866,13 @@
             align-items: center;
             font-size: x-large;
 
+            .contacto__direccion{
+                width: 95%;
+            }
+
             .contacto__maps{
-                height: 400px;
-                width: 500px;
+                height: 80%;
+                width: 90%;
             }
         }
     }
@@ -833,6 +883,10 @@
         background-image: $colorGradiente;
 
         .footer__div{
+
+            .div__parrafo{
+                line-height: 20px;
+            }
             
             .div__img{
                 width: 25px;
@@ -857,6 +911,10 @@
         .header__link--logo{
             height: 60px;
             width: 60px;
+        }
+
+        .burger{
+            display: none;
         }
     }
 
@@ -996,6 +1054,13 @@
         }
     }
 
+    /*CONSEJOS DE SALUD*/ 
+
+    .cuadro__cortado{
+        display: none;
+    }
+    /*Finaliza consejos Salud*/
+
 }
 
 /*Termina tablet*/
@@ -1013,6 +1078,10 @@
         .header__link--logo{
             height: 55px;
             width: 55px;
+        }
+
+        .burger{
+            display: none;
         }
     }
 
@@ -1160,6 +1229,14 @@
             @include fotosGaleria(carnicera);
         }
     }
+
+    /*CONSEJOS DE SALUD*/ 
+
+    .cuadro__cortado{
+        display: none;
+    }
+    /*Finaliza consejos Salud*/
+
 }
 /*Termina Pantallas 992px*/
     

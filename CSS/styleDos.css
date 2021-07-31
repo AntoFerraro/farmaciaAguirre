@@ -26,7 +26,7 @@
   font-weight: 500; }
 
 #mainPadding {
-  padding: 5px 5px 20px 8px; }
+  padding: 5px 5px 20px 5px; }
 
 /*COMIENZA MENU*/
 .header {
@@ -235,7 +235,7 @@
 
 /*HORARIOS Y SERVICIOS*/
 #mainHoraServ {
-  padding: 5px 5px 20px 8px;
+  padding: 5px 5px 20px 5px;
   background-image: url(../fotos/fondoHora.jpg);
   background-size: cover; }
 
@@ -255,7 +255,8 @@
     grid-area: hora;
     font-size: x-large;
     text-align: center;
-    width: 80%; }
+    width: 80%;
+    padding-top: 20px; }
   .horarios__principal .horarios__turnoimg {
     grid-area: enfermera;
     width: 100px;
@@ -437,6 +438,12 @@
     text-align: center;
     background-color: rgba(248, 248, 255, 0.527);
     border-radius: 20px; }
+    .contacto__fondo .contacto__whatsapp .contacto__link {
+      text-decoration: none;
+      color: slateblue;
+      font-weight: 700;
+      font-size: larger;
+      text-transform: uppercase; }
     .contacto__fondo .contacto__whatsapp .contacto__parrafo {
       line-height: 30px;
       padding-left: 3px; }
@@ -490,18 +497,22 @@
 @media only screen and (max-width: 600px) {
   /*Menu*/
   .header {
-    position: unset;
-    height: 100px;
-    width: auto;
-    background-image: linear-gradient(90deg, #f2f2f4 26%, #2bb38c 78%); }
-    .header__lista {
-      display: flex;
-      align-items: flex-end;
-      height: 100%;
-      font-size: medium; }
-    .header .header__link--logo {
-      height: 60px;
-      width: 60px; }
+    height: 56px; }
+    .header__nav {
+      display: none; }
+    .header .burger {
+      background-color: #2bb38c;
+      height: 100%; }
+      .header .burger .navbar .navbar-brand {
+        padding-left: 8px;
+        letter-spacing: 4px;
+        color: #464444;
+        font-weight: 600;
+        font-size: smaller; }
+      .header .burger .navbar-collapse .navbar-nav .nav-item {
+        padding-left: 25px; }
+        .header .burger .navbar-collapse .navbar-nav .nav-item .nav-link {
+          color: #e6dee2; }
   /*Termina Menu*/
   /*INDEX*/
   .historia__article .historia__div--carousel {
@@ -526,14 +537,17 @@
     height: 85%; }
   /*Termina Quienes Somos*/
   /*HORARIOS Y SERVICIOS*/
-  .horarios__principal .horarios__parrafo {
-    font-size: medium;
-    font-weight: 900; }
-  .horarios__principal .horarios__link {
-    font-size: large;
-    font-weight: 800; }
+  .horarios__principal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 140px; }
+    .horarios__principal .horarios__parrafo {
+      font-size: medium;
+      font-weight: 900; }
+    .horarios__principal .horarios__link {
+      font-size: large;
+      font-weight: 800; }
   .sociales__contenedor .sociales__lista {
-    left: 100px; }
+    left: 40px; }
   /*termina Horarios y servicios*/
   /*PRODUCTOS NATURALES*/
   .galeria__contenedor {
@@ -666,6 +680,15 @@
       height: 300px;
       grid-area: valeriana;
       justify-self: center; }
+  /*CONSEJOS DE SALUD*/
+  .cuadro__completo {
+    display: none; }
+  .cuadro__cortado {
+    display: block;
+    font-size: medium; }
+  .medicamentos__contenedor .medicamentos__titulo {
+    text-shadow: 1px 2px whitesmoke; }
+  /*Finaliza consejos Salud*/
   /*CONTACTO*/
   .contacto__fondo {
     background-image: url(../fotos/telefono.png); }
@@ -677,7 +700,8 @@
       margin-top: 30px; }
     .contacto__fondo .contacto__whatsapp {
       font-size: x-large;
-      width: 550px;
+      margin-top: 25px;
+      width: 90%;
       background-image: linear-gradient(to bottom, rgba(89, 89, 238, 0.452), rgba(119, 107, 107, 0.521)); }
     .contacto__fondo .contacto__mapa {
       display: flex;
@@ -686,13 +710,17 @@
       justify-content: space-evenly;
       align-items: center;
       font-size: x-large; }
+      .contacto__fondo .contacto__mapa .contacto__direccion {
+        width: 95%; }
       .contacto__fondo .contacto__mapa .contacto__maps {
-        height: 400px;
-        width: 500px; }
+        height: 80%;
+        width: 90%; }
   /*FOOTER*/
   .footer {
     height: 160px;
     background-image: linear-gradient(90deg, #f2f2f4 26%, #2bb38c 78%); }
+    .footer .footer__div .div__parrafo {
+      line-height: 20px; }
     .footer .footer__div .div__img {
       width: 25px;
       height: 25px; }
@@ -709,6 +737,8 @@
     .header .header__link--logo {
       height: 60px;
       width: 60px; }
+    .header .burger {
+      display: none; }
   /*INDEX*/
   .historia__article .historia__parrafo {
     width: 600px; }
@@ -837,7 +867,11 @@
       width: 350px;
       height: 400px;
       grid-area: carnicera;
-      justify-self: center; } }
+      justify-self: center; }
+  /*CONSEJOS DE SALUD*/
+  .cuadro__cortado {
+    display: none; }
+  /*Finaliza consejos Salud*/ }
 
 /*Termina tablet*/
 /*Comienza Pantallas 992px*/
@@ -851,6 +885,8 @@
     .header .header__link--logo {
       height: 55px;
       width: 55px; }
+    .header .burger {
+      display: none; }
   /*INDEX*/
   .historia__article .historia__parrafo {
     width: 800px; }
@@ -985,6 +1021,10 @@
       width: 350px;
       height: 400px;
       grid-area: carnicera;
-      justify-self: center; } }
+      justify-self: center; }
+  /*CONSEJOS DE SALUD*/
+  .cuadro__cortado {
+    display: none; }
+  /*Finaliza consejos Salud*/ }
 
 /*Termina Pantallas 992px*/
